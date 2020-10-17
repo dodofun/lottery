@@ -7,10 +7,16 @@ x86	平板、模拟器用得比较多
 x86_64	64位的平板
 ````
 
+## 技术选择
+react-native | antd-rn | react-native-storage | eslint + stylelint + commitlint + husky + lint-staged | 
+
 ## React-native 相关库
 ````
 react-navigation
 https://github.com/react-navigation/react-navigation
+
+react-native-router-flux
+https://github.com/aksonov/react-native-router-flux
 
 react-native-firebase
 https://github.com/invertase/react-native-firebase
@@ -53,6 +59,12 @@ https://github.com/yorkie/react-native-wechat
 
 react-native-animatable
 https://github.com/oblador/react-native-animatable
+
+react-native-device-info
+https://github.com/react-native-device-info/react-native-device-info
+
+i18next
+https://github.com/i18next/react-i18next
 
 react-native-web
 https://github.com/necolas/react-native-web
