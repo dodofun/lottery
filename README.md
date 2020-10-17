@@ -69,7 +69,7 @@ git remote add origin https://github.com/dodofun/rn-starter.git
 git push -u origin master
 ````
 
-## 代码规范
+## 代码规范 eslint + prettier + stylelint + commitlint
 
 ### Commitlint
 https://segmentfault.com/a/1190000017790694
@@ -95,11 +95,8 @@ https://segmentfault.com/a/1190000017790694
 例子：
 
 git commit -m 'feat: 增加 xxx 功能'
-git commit -m 'bug: 修复 xxx 功能'
+git commit -m 'fix: 修复 xxx 功能'
 subject
 subject是 commit 目的的简短描述，可以做一些配置，如最大长度限制。
 
 ````
-
-
-# eslint + prettier + stylelint + commitlint
