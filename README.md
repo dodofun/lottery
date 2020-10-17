@@ -8,7 +8,7 @@ x86_64	64位的平板
 ````
 
 ## 技术选择
-react-native | antd-rn | react-native-storage | eslint + stylelint + commitlint + husky + lint-staged | 
+react-native | antd-rn | react-native-storage | eslint + stylelint + commitlint + husky + lint-staged | react-native-navigation | 
 
 ## React-native 相关库
 ````
