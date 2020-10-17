@@ -21,6 +21,9 @@ https://github.com/react-native-community/lottie-react-native
 WatermelonDB
 https://github.com/Nozbe/WatermelonDB
 
+react-native-storage
+https://github.com/sunnylqm/react-native-storage
+
 rxdb
 https://github.com/pubkey/rxdb
 

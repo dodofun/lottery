@@ -1,4 +1,12 @@
 {
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "@ant-design/react-native"
+      }
+    ]
+  ],
   "env": {
     "production": {
       "plugins": [

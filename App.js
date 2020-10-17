@@ -24,6 +24,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen'
 
+import {Button, Provider, Toast} from '@ant-design/react-native'
+
 const App: () => React$Node = () => {
   return (
     <>
@@ -40,6 +42,11 @@ const App: () => React$Node = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
+              <Provider>
+                <Button onPress={() => Toast.info('This is a toast tips')}>
+                  Start
+                </Button>
+              </Provider>
               <Text style={styles.sectionTitle}>Step 1</Text>
               <Text style={styles.sectionDescription}>
                 Edit <Text style={styles.highlight}>App.js</Text> to change this
