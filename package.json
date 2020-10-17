@@ -1,0 +1,60 @@
+{
+  "name": "lottery",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "npx react-native run-android",
+    "test:android": "npx react-native run-android --variant=release",
+    "pkg:android": "cd android && ./gradlew assembleRelease",
+    "ios": "npx react-native run-ios",
+    "start": "npx react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "stylelint:fix": "stylelint --config  ./.stylelintrc --fix",
+    "upgrade": "npx react-native upgrade"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "npm run lint:fix",
+      "git add"
+    ],
+    "*.{less,scss,css}": [
+      "stylelint --config  ./.stylelintrc --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged --allow-empty"
+    }
+  },
+  "dependencies": {
+    "react": "16.13.1",
+    "react-native": "0.63.3",
+    "react-native-webview": "^10.9.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/runtime": "^7.12.1",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.5.2",
+    "eslint": "^7.11.0",
+    "jest": "^26.5.3",
+    "metro-react-native-babel-preset": "^0.63.0",
+    "react-test-renderer": "16.13.1",
+    "@commitlint/cli": "^7.2.1",
+    "@commitlint/config-conventional": "^9.0.1",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.1.2",
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
